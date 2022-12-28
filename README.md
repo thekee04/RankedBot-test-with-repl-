@@ -1,3 +1,5 @@
+##NB! It's BoingK here, I've made quite a few changes to Catsobi's original code, so the stuff down below might not be completely relevant. Since I can't remember what I've done to the code, I'm sure yous can figure it out. Have fun with it, and feel free to ask me any questions on discord.
+
 ## About
 
 A discord bot that acts as a ranked system for any game. It calculates and keeps track of player ratings within the server. It stores the database on the discord server itself via messages in two isolated channels.
