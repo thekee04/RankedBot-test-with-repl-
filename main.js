@@ -12,6 +12,11 @@ const fs = require('node:fs');
 const { Client, Collection, Intents } = require('discord.js');
 const keep_alive = require('./keepalive.js')
 
+// This dependancy is unused at the moment, the idea is that it somehow can launch a website (maybe)
+const { exec } = require("child_process");
+
+
+
 // Setup client 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
@@ -48,7 +53,8 @@ console.log('[Init/Main]: Loading core files.')
 client.ranked = require(`./core/ranked.js`)
 
 // Finally, login
-keep_alive();
+keep_alive()
 console.log('[Init/Main]: Logging in...');
 client.on('debug', console.log);
 client.login(process.env.DISCORD_TOKEN);
+console
